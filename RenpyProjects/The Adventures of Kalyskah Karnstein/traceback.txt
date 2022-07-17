@@ -1,58 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 711, in execute
-    screen preferences():
-  File "game/screens.rpy", line 711, in execute
-    screen preferences():
-  File "game/screens.rpy", line 715, in execute
-    use game_menu(scroll="viewport"):
-TypeError: Missing required positional arguments: 'title'
+  File "game/script.rpy", line 30, in script
+    Story "It was said that this place contained a very specific resonance that could help the demoness back home"
+Exception: Sayer 'Story' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\python.py", line 1049, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 3804, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\core.py", line 3804, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 711, in execute
-    screen preferences():
-  File "game/screens.rpy", line 711, in execute
-    screen preferences():
-  File "game/screens.rpy", line 715, in execute
-    use game_menu(scroll="viewport"):
-  File "C:\MyFolders\Ren'Py Projects\renpy-7.4.8-sdk\renpy\ast.py", line 230, in apply
-    raise TypeError(
-TypeError: Missing required positional arguments: 'title'
+  File "game/script.rpy", line 30, in script
+    Story "It was said that this place contained a very specific resonance that could help the demoness back home"
+  File "C:\Users\adolf\Downloads\renpy-8.0.1-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\adolf\Downloads\renpy-8.0.1-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Story' is not defined.
 
-Windows-10-10.0.22000 AMD64
+Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.1.22070801
 The Adventures of Kalyskah Karnstein 1.0
-Sat Jul 16 16:18:59 2022
+Sat Jul 16 20:06:11 2022
