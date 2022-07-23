@@ -266,23 +266,17 @@ label start:
             scene HighresScreenshot00094
             Kalyskah "They’ve got to go!"
             #Some sound-effect of clothes being ripped and the camera shaking
-            scene HighresScreenshot00094
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00094
-            window hide # hides the window.
-            $ renpy.pause()
             scene HighresScreenshot00095
             Kalyskah "You ruined my clothes!"
             scene HighresScreenshot00096
-            Thoughts "By the storms, is her knees where I think they are?"
+            Kalyskah "{i}{color=#DCDCDC}By the storms, is her knees where I think they are?"
             scene HighresScreenshot00097
-            Thoughts "Uhng.. I won’t be able to control myself.."
+            Kalyskah "{i}{color=#DCDCDC}Uhng.. I won’t be able to control myself.."
             scene HighresScreenshot00098
             Merishya "Yes! I ruined them. What are you going to do about it?"
             Merishya "Because I know what I’ll do.."
             scene HighresScreenshot00099
-            Thoughts "Urgh… such a hot tongue!"
+            Kalyskah "{i}{color=#DCDCDC}Urgh… such a hot tongue!"
             scene HighresScreenshot00100
             Kalyskah "Ok, you convinced me. You may proceed."
             scene HighresScreenshot00101
@@ -307,9 +301,9 @@ label start:
                     window hide # hides the window.
                     $ renpy.pause()
                     scene HighresScreenshot00108
-                    Thoughts "Is she increasing the pace?"
+                    Kalyskah "{i}{color=#DCDCDC}Is she increasing the pace?"
                     scene HighresScreenshot00109
-                    Thoughts "Oh fuck, I don’t care!"
+                    Kalyskah "{i}{color=#DCDCDC}Oh fuck, I don’t care!"
 
 
 
@@ -378,7 +372,7 @@ label start:
 
 
 
-        "I need to be alone.": #2
+        "I need to be alone. (don't clock - not finished yet)": #2
             pass
 
     
