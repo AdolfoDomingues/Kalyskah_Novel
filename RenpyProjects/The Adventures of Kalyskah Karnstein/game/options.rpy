@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("The Adventures of Kalyskah Karnstein")
+define config.name = _("Kalyskah Kranstein: Jungle Trouble")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "TheAdventuresofKalyskahKarnstein"
+define build.name = "Kalyskah_Jungle-Trouble"
 
 
 ## Sounds and music ############################################################
@@ -62,7 +62,6 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
 
 
 ## Transitions #################################################################
@@ -91,6 +90,8 @@ define config.after_load_transition = None
 
 define config.end_game_transition = None
 
+
+define config.main_menu_music = "audio/main_theme.mp3"
 
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
@@ -143,7 +144,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "TheAdventuresofKalyskahKarnstein-1657961612"
+define config.save_directory = "AdventuresofKalyskahKranstein"
 
 
 ## Icon ########################################################################

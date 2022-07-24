@@ -286,27 +286,40 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        #style_prefix "navigation"
+    if main_menu and notSettings:
+        imagebutton idle "gui/menu_logo.png" xpos 108 ypos 49
 
-        xpos 130
-        yalign 0.47
+    imagebutton idle "gui/menu_logos.png" xpos 2130 ypos 1318
 
-        spacing 3
+    vbox xpos 188 ypos 690:
+        
+        
+        if main_menu and notSettings:
+            spacing -35
+            imagebutton idle "gui/Ui/btn_start_i.png" hover "gui/Ui/btn_start_h.png"  action Start()
+            imagebutton idle "gui/Ui/btn_load_i.png" hover "gui/Ui/btn_load_h.png" action [SetVariable('notSettings', 0), ShowMenu("load")]
+            imagebutton idle "gui/Ui/btn_settings_i.png" hover "gui/Ui/btn_settings_h.png" action [SetVariable('notSettings', 0), ShowMenu("preferences")]
+            imagebutton idle "gui/Ui/btn_quit_i.png" hover "gui/Ui/btn_quit_h.png" action Quit(confirm=not main_menu)
 
-        if main_menu:
 
-            textbutton ("Start") action Start() text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
+            imagebutton idle "gui/menu_liner.png" ypos 40
+
+            imagebutton idle "gui/Ui/btn_discord_i.png" hover "gui/Ui/btn_discord_h.png"  action OpenURL("https://discord.gg/qTx9Csv") ypos 90
+            imagebutton idle "gui/Ui/btn_patreon_i.png" hover "gui/Ui/btn_patreon_h.png" action OpenURL("https://www.patreon.com/nobrelobo") ypos 110
+            imagebutton idle "gui/Ui/btn_subscribestar_i.png" hover "gui/Ui/btn_subscribestar_h.png" action OpenURL("https://subscribestar.adult/nobrelobo") ypos 130
+
+        
 
         else:
+            spacing 0
 
             textbutton ("History") action ShowMenu("history") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
 
             textbutton ("Save game") action ShowMenu("save") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
 
-        textbutton ("Load game") action ShowMenu("load") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
+            textbutton ("Load game") action ShowMenu("load") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
 
-        textbutton ("Settings") action ShowMenu("preferences") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
+            textbutton ("Settings") action ShowMenu("preferences") text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
 
         if _in_replay:
 
@@ -323,11 +336,6 @@ screen navigation():
             ## Help isn't necessary or relevant to mobile devices.
             #textbutton _("Help") action ShowMenu("help")
 
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton ("Quit") action Quit(confirm=not main_menu) text_size 40 text_font "gui/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf"
 
 
 style navigation_button is gui_button
@@ -362,16 +370,6 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     use navigation
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]"
-                #style "main_menu_title"
-
-            #text "[config.version]":
-                #style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -381,17 +379,17 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
+    xsize 560
     yfill True
 
     #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -30
-    xmaximum 1200
+    xoffset -40
+    xmaximum 1600
     yalign 1.0
-    yoffset -30
+    yoffset -40
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
@@ -470,8 +468,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
-
-        action Return()
+        action [SetVariable('notSettings', 1), Return()]
 
     label title
 
@@ -493,32 +490,32 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
+    bottom_padding 60
+    top_padding 240
 
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 560
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
+    left_margin 80
+    right_margin 40
+    top_margin 20
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 1840
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
 
 style game_menu_side:
-    spacing 15
+    spacing 20
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 100
+    ysize 240
 
 style game_menu_label_text:
     size gui.title_text_size
@@ -528,7 +525,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    yoffset -60
 
 
 ## About screen ################################################################
@@ -545,7 +542,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_(""), scroll="viewport"):
+    use game_menu(_("About"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -582,14 +579,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_(""))
+    use file_slots(_("Save"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_(""))
+    use file_slots(_("Load"))
 
 
 screen file_slots(title):
@@ -679,8 +676,8 @@ style slot_time_text is slot_button_text
 style slot_name_text is slot_button_text
 
 style page_label:
-    xpadding 75
-    ypadding 5
+    xpadding 100
+    ypadding 6
 
 style page_label_text:
     text_align 0.5
@@ -816,13 +813,13 @@ style mute_all_button_text is check_button_text
 
 style pref_label:
     top_margin gui.pref_spacing
-    bottom_margin 3
+    bottom_margin 4
 
 style pref_label_text:
     yalign 1.0
 
 style pref_vbox:
-    xsize 338
+    xsize 450
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -845,18 +842,18 @@ style check_button_text:
     properties gui.button_text_properties("check_button")
 
 style slider_slider:
-    xsize 525
+    xsize 700
 
 style slider_button:
     properties gui.button_properties("slider_button")
     yalign 0.5
-    left_margin 15
+    left_margin 20
 
 style slider_button_text:
     properties gui.button_text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize 900
 
 
 ## History screen ##############################################################
@@ -874,7 +871,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_(""), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
@@ -961,12 +958,12 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_(""), scroll="viewport"):
+    use game_menu(_("Help"), scroll="viewport"):
 
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 30
 
             hbox:
 
@@ -1096,14 +1093,14 @@ style help_text is gui_text
 
 style help_button:
     properties gui.button_properties("help_button")
-    xmargin 12
+    xmargin 16
 
 style help_button_text:
     properties gui.button_text_properties("help_button")
 
 style help_label:
-    xsize 375
-    right_padding 30
+    xsize 500
+    right_padding 40
 
 style help_label_text:
     size gui.text_size
@@ -1140,7 +1137,7 @@ screen confirm(message, yes_action, no_action):
         vbox:
             xalign .5
             yalign .5
-            spacing 45
+            spacing 60
 
             label _(message):
                 style "confirm_prompt"
@@ -1148,7 +1145,7 @@ screen confirm(message, yes_action, no_action):
 
             hbox:
                 xalign 0.5
-                spacing 150
+                spacing 200
 
                 textbutton _("Yes") action yes_action
                 textbutton _("No") action no_action
@@ -1195,7 +1192,7 @@ screen skip_indicator():
     frame:
 
         hbox:
-            spacing 9
+            spacing 12
 
             text _("Skipping")
 
@@ -1400,7 +1397,7 @@ style nvl_button_text:
 
 style pref_vbox:
     variant "medium"
-    xsize 675
+    xsize 900
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
@@ -1449,7 +1446,7 @@ style game_menu_outer_frame:
 
 style game_menu_navigation_frame:
     variant "small"
-    xsize 510
+    xsize 680
 
 style game_menu_content_frame:
     variant "small"
@@ -1457,7 +1454,7 @@ style game_menu_content_frame:
 
 style pref_vbox:
     variant "small"
-    xsize 600
+    xsize 800
 
 style bar:
     variant "small"
@@ -1501,4 +1498,4 @@ style slider_vbox:
 
 style slider_slider:
     variant "small"
-    xsize 900
+    xsize 1200
