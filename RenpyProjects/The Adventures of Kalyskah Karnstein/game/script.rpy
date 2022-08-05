@@ -1,5 +1,7 @@
 ﻿define notSettings = 1
 
+define IsKalyNaked = 0
+
 define Kalyskah = Character("Kalyskah", color = "#ADD8E6")
 define Merishya = Character("Merishya", color = "#DC143C")
 
@@ -734,6 +736,7 @@ label Choice_2:
 
 
                         "Kick it and look for Merishya":
+                            $IsKalyNaked = 1
                             jump KalyKickTheThing
                     
                 "Kick it and look for Merishya (Leads to ending the novel)":
@@ -748,43 +751,83 @@ return
 
 label KalyKickTheThing:
     play music "audio/kicked_the_tentacles.mp3" loop fadeout 1.0
-    scene HighresScreenshot00151 with hpunch
-    #Camera Shake
-    Kalyskah "No! Just– no!"
-    scene HighresScreenshot00152 with Dissolve(0.6)
-    Kalyskah "Get The fuck out of my sight!"
-    scene HighresScreenshot00153 with Dissolve(0.6)
-    "The creatures start to retreat in fear."
-    scene HighresScreenshot00154 with Dissolve(0.6)
-    "The vampire shows her fangs and get’s ready for a fight."
-    scene HighresScreenshot00155 with Dissolve(0.6)
-    "She waits for it…"
-    scene HighresScreenshot00156 with Dissolve(0.6)
-    "And waits...."
-    scene HighresScreenshot00157 with Dissolve(0.6)
-    "But they were already gone."
-    scene HighresScreenshot00158 with Dissolve(0.6)
-    Kalyskah "{i}{color=#DCDCDC}*Phew* That was weird.."
-    scene HighresScreenshot00159 with Dissolve(0.6)
-    Kalyskah "Merishya, are you there?"
-    scene HighresScreenshot00160 with Dissolve(0.6)
-    Kalyskah "I hope she’s not in trouble... I was a bit harsh with her."
-    scene HighresScreenshot00161 with Dissolve(0.6)
-    Kalyskah "Oh, whom am I kidding? She’s probably fucking a tree."
-    scene HighresScreenshot00162 with Dissolve(0.6)
-    Kalyskah "Merishya! If you are hiding somewhere out there, I will go and give you a spank you will never forget!"
+    if IsKalyNaked == 0:
+        scene HighresScreenshot00151 with hpunch
+        #Camera Shake
+        Kalyskah "No! Just– no!"
+        scene HighresScreenshot00152 with Dissolve(0.6)
+        Kalyskah "Get The fuck out of my sight!"
+        scene HighresScreenshot00153 with Dissolve(0.6)
+        "The creatures start to retreat in fear."
+        scene HighresScreenshot00154 with Dissolve(0.6)
+        "The vampire shows her fangs and get’s ready for a fight."
+        scene HighresScreenshot00155 with Dissolve(0.6)
+        "She waits for it…"
+        scene HighresScreenshot00156 with Dissolve(0.6)
+        "And waits...."
+        scene HighresScreenshot00157 with Dissolve(0.6)
+        "But they were already gone."
+        scene HighresScreenshot00158 with Dissolve(0.6)
+        Kalyskah "{i}{color=#DCDCDC}*Phew* That was weird.."
+        scene HighresScreenshot00159 with Dissolve(0.6)
+        Kalyskah "Merishya, are you there?"
+        scene HighresScreenshot00160 with Dissolve(0.6)
+        Kalyskah "I hope she’s not in trouble... I was a bit harsh with her."
+        scene HighresScreenshot00161 with Dissolve(0.6)
+        Kalyskah "Oh, whom am I kidding? She’s probably fucking a tree."
+        scene HighresScreenshot00162 with Dissolve(0.6)
+        Kalyskah "Merishya! If you are hiding somewhere out there, I will go and give you a spank you will never forget!"
 
-    # Kalyskah "Merishya, we need to leave this place, now!"
-    # Merishya "Are you sure? That little thing doesn’t seem too harmful… I think we can have some fun before we continue our journey!"
+        # Kalyskah "Merishya, we need to leave this place, now!"
+        # Merishya "Are you sure? That little thing doesn’t seem too harmful… I think we can have some fun before we continue our journey!"
 
-    # menu:
-    #     "I am sure (ends the novel)":
-    #         Kalyskah "I am sure, we need to focus. Besides, this is all too much for me."
-    #         Merishya "That’s disappointing, but alright. Let’s leave"
+        # menu:
+        #     "I am sure (ends the novel)":
+        #         Kalyskah "I am sure, we need to focus. Besides, this is all too much for me."
+        #         Merishya "That’s disappointing, but alright. Let’s leave"
 
 
-    #     "Maybe we can stay for a bit":
-    #         Kalyskah "Hm, you might be right.. Fine. Let us head back and attract the creature. I would rather enjoy watching you melt at the touch of it." 
+        #     "Maybe we can stay for a bit":
+        #         Kalyskah "Hm, you might be right.. Fine. Let us head back and attract the creature. I would rather enjoy watching you melt at the touch of it." 
+
+    else:
+        scene HighresScreenshot00151 with hpunch
+        #Camera Shake
+        Kalyskah "No! Just– no!"
+        scene HighresScreenshot00152 with Dissolve(0.6)
+        Kalyskah "Get The fuck out of my sight!"
+        scene HighresScreenshot00153 with Dissolve(0.6)
+        "The creatures start to retreat in fear."
+        scene HighresScreenshot00154 with Dissolve(0.6)
+        "The vampire shows her fangs and get’s ready for a fight."
+        scene HighresScreenshot00155 with Dissolve(0.6)
+        "She waits for it…"
+        scene HighresScreenshot00156 with Dissolve(0.6)
+        "And waits...."
+        scene HighresScreenshot00157 with Dissolve(0.6)
+        "But they were already gone."
+        scene HighresScreenshot00158 with Dissolve(0.6)
+        Kalyskah "{i}{color=#DCDCDC}*Phew* That was weird.."
+        scene HighresScreenshot00159 with Dissolve(0.6)
+        Kalyskah "Merishya, are you there?"
+        scene HighresScreenshot00160 with Dissolve(0.6)
+        Kalyskah "I hope she’s not in trouble... I was a bit harsh with her."
+        scene HighresScreenshot00161 with Dissolve(0.6)
+        Kalyskah "Oh, whom am I kidding? She’s probably fucking a tree."
+        scene HighresScreenshot00162 with Dissolve(0.6)
+        Kalyskah "Merishya! If you are hiding somewhere out there, I will go and give you a spank you will never forget!"
+
+        # Kalyskah "Merishya, we need to leave this place, now!"
+        # Merishya "Are you sure? That little thing doesn’t seem too harmful… I think we can have some fun before we continue our journey!"
+
+        # menu:
+        #     "I am sure (ends the novel)":
+        #         Kalyskah "I am sure, we need to focus. Besides, this is all too much for me."
+        #         Merishya "That’s disappointing, but alright. Let’s leave"
+
+
+        #     "Maybe we can stay for a bit":
+        #         Kalyskah "Hm, you might be right.. Fine. Let us head back and attract the creature. I would rather enjoy watching you melt at the touch of it." 
 
 
 
