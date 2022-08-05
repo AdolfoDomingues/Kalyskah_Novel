@@ -188,3 +188,141 @@ image HighresScreenshot00177 = "scenes/HighresScreenshot00177.jpg"
 image HighresScreenshot00178 = "scenes/HighresScreenshot00178.jpg"
 image HighresScreenshot00179 = "scenes/HighresScreenshot00179.jpg"
 image HighresScreenshot00180 = "scenes/HighresScreenshot00180.jpg"
+image HighresScreenshot00181 = "scenes/HighresScreenshot00181.jpg"
+image HighresScreenshot00182 = "scenes/HighresScreenshot00182.jpg"
+image HighresScreenshot00183 = "scenes/HighresScreenshot00183.jpg"
+image HighresScreenshot00184 = "scenes/HighresScreenshot00184.jpg"
+image HighresScreenshot00185 = "scenes/HighresScreenshot00185.jpg"
+image HighresScreenshot00186 = "scenes/HighresScreenshot00186.jpg"
+image HighresScreenshot00187 = "scenes/HighresScreenshot00187.jpg"
+image HighresScreenshot00188 = "scenes/HighresScreenshot00188.jpg"
+image HighresScreenshot00189 = "scenes/HighresScreenshot00189.jpg"
+image HighresScreenshot00190 = "scenes/HighresScreenshot00190.jpg"
+image HighresScreenshot00191 = "scenes/HighresScreenshot00191.jpg"
+image HighresScreenshot00192 = "scenes/HighresScreenshot00192.jpg"
+image HighresScreenshot00193 = "scenes/HighresScreenshot00193.jpg"
+image HighresScreenshot00194 = "scenes/HighresScreenshot00194.jpg"
+image HighresScreenshot00195 = "scenes/HighresScreenshot00195.jpg"
+image HighresScreenshot00196 = "scenes/HighresScreenshot00196.jpg"
+image HighresScreenshot00197 = "scenes/HighresScreenshot00197.jpg"
+image HighresScreenshot00198 = "scenes/HighresScreenshot00198.jpg"
+image HighresScreenshot00199 = "scenes/HighresScreenshot00199.jpg"
+image HighresScreenshot00200 = "scenes/HighresScreenshot00200.jpg"
+image HighresScreenshot00201 = "scenes/HighresScreenshot00201.jpg"
+image HighresScreenshot00202 = "scenes/HighresScreenshot00202.jpg"
+image HighresScreenshot00203 = "scenes/HighresScreenshot00203.jpg"
+image HighresScreenshot00204 = "scenes/HighresScreenshot00204.jpg"
+image HighresScreenshot00205 = "scenes/HighresScreenshot00205.jpg"
+image HighresScreenshot00206 = "scenes/HighresScreenshot00206.jpg"
+image HighresScreenshot00207 = "scenes/HighresScreenshot00207.jpg"
+image HighresScreenshot00208 = "scenes/HighresScreenshot00208.jpg"
+image HighresScreenshot00209 = "scenes/HighresScreenshot00209.jpg"
+image HighresScreenshot00210 = "scenes/HighresScreenshot00210.jpg"
+image HighresScreenshot00211 = "scenes/HighresScreenshot00211.jpg"
+image HighresScreenshot00212 = "scenes/HighresScreenshot00212.jpg"
+image HighresScreenshot00213 = "scenes/HighresScreenshot00213.jpg"
+image HighresScreenshot00214 = "scenes/HighresScreenshot00214.jpg"
+image HighresScreenshot00215 = "scenes/HighresScreenshot00215.jpg"
+image HighresScreenshot00216 = "scenes/HighresScreenshot00216.jpg"
+image HighresScreenshot00217 = "scenes/HighresScreenshot00217.jpg"
+image HighresScreenshot00218 = "scenes/HighresScreenshot00218.jpg"
+image HighresScreenshot00219 = "scenes/HighresScreenshot00219.jpg"
+image HighresScreenshot00220 = "scenes/HighresScreenshot00220.jpg"
+image HighresScreenshot00221 = "scenes/HighresScreenshot00221.jpg"
+image HighresScreenshot00222 = "scenes/HighresScreenshot00222.jpg"
+image HighresScreenshot00223 = "scenes/HighresScreenshot00223.jpg"
+image HighresScreenshot00224 = "scenes/HighresScreenshot00224.jpg"
+image HighresScreenshot00225 = "scenes/HighresScreenshot00225.jpg"
+image HighresScreenshot00226 = "scenes/HighresScreenshot00226.jpg"
+image HighresScreenshot00227 = "scenes/HighresScreenshot00227.jpg"
+image HighresScreenshot00228 = "scenes/HighresScreenshot00228.jpg"
+image HighresScreenshot00229 = "scenes/HighresScreenshot00229.jpg"
+image HighresScreenshot00230 = "scenes/HighresScreenshot00230.jpg"
+image HighresScreenshot00231 = "scenes/HighresScreenshot00231.jpg"
+image HighresScreenshot00232 = "scenes/HighresScreenshot00232.jpg"
+image HighresScreenshot00233 = "scenes/HighresScreenshot00233.jpg"
+image HighresScreenshot00234 = "scenes/HighresScreenshot00234.jpg"
+image HighresScreenshot00235 = "scenes/HighresScreenshot00235.jpg"
+image HighresScreenshot00236 = "scenes/HighresScreenshot00236.jpg"
+image HighresScreenshot00237 = "scenes/HighresScreenshot00237.jpg"
+image HighresScreenshot00238 = "scenes/HighresScreenshot00238.jpg"
+image HighresScreenshot00239 = "scenes/HighresScreenshot00239.jpg"
+image HighresScreenshot00240 = "scenes/HighresScreenshot00240.jpg"
+image HighresScreenshot00241 = "scenes/HighresScreenshot00241.jpg"
+image HighresScreenshot00242 = "scenes/HighresScreenshot00242.jpg"
+image HighresScreenshot00243 = "scenes/HighresScreenshot00243.jpg"
+image HighresScreenshot00244 = "scenes/HighresScreenshot00244.jpg"
+image HighresScreenshot00245 = "scenes/HighresScreenshot00245.jpg"
+image HighresScreenshot00246 = "scenes/HighresScreenshot00246.jpg"
+image HighresScreenshot00247 = "scenes/HighresScreenshot00247.jpg"
+image HighresScreenshot00248 = "scenes/HighresScreenshot00248.jpg"
+image HighresScreenshot00249 = "scenes/HighresScreenshot00249.jpg"
+image HighresScreenshot00250 = "scenes/HighresScreenshot00250.jpg"
+image HighresScreenshot00251 = "scenes/HighresScreenshot00251.jpg"
+image HighresScreenshot00252 = "scenes/HighresScreenshot00252.jpg"
+image HighresScreenshot00253 = "scenes/HighresScreenshot00253.jpg"
+image HighresScreenshot00254 = "scenes/HighresScreenshot00254.jpg"
+image HighresScreenshot00255 = "scenes/HighresScreenshot00255.jpg"
+image HighresScreenshot00256 = "scenes/HighresScreenshot00256.jpg"
+image HighresScreenshot00257 = "scenes/HighresScreenshot00257.jpg"
+image HighresScreenshot00258 = "scenes/HighresScreenshot00258.jpg"
+image HighresScreenshot00259 = "scenes/HighresScreenshot00259.jpg"
+
+
+
+
+
+
+image FirstGlow:
+    "scenes/HighresScreenshot00239.jpg" with Dissolve(0.2)
+    0.4
+    "scenes/HighresScreenshot00238.jpg" with Dissolve(0.2)
+    0.4
+
+    repeat
+
+
+image SecondGlow:
+    "scenes/HighresScreenshot00181.jpg" with Dissolve(0.2)
+    0.4
+    "scenes/HighresScreenshot00240.jpg" with Dissolve(0.2)
+    0.4
+
+    repeat
+
+
+
+
+
+
+init python:
+    """
+    описание функции Ani:
+    автоматическое объявление картинки с анимацией,
+    например есть кадры "images/neko%s.png",
+    где %s - числа от 1 до 5, тогда объявляем анимацию так:
+    image neko = Ani("neko", 5, 0.5, reverse = False)
+    где:
+    img_name - имя файла без номера (например, "neko")
+    frames - количество кадров
+    delay - пауза между кадрами в секундах
+    loop - зациклить анимацию (по умолчанию включено)
+    reverse - нужно ли проигрывание анимации в обратную сторону
+    effect - эффект для смены кадров
+    start - с какой цифры начинать отсчет кадров
+    ext - расширение файлов (по умолчанию png)
+    """
+    def Ani(img_name, frames, delay=.1, loop=True, reverse=True, effect=None, start=1, ext="jpg", **properties):
+        args = []
+        for i in range(start, start + frames):
+            args.append(renpy.display.im.image(img_name + str(i) + "." + ext))
+            if reverse or loop or (i < start + frames - 1):
+                args.append(delay)
+                args.append(effect)
+        if reverse: # обратная анимация, если нужна
+            for i in range(start + frames - 2, start, -1):
+                args.append(renpy.display.im.image(img_name + str(i) + "." + ext))
+                if loop or (i > start + 1):
+                    args.append(delay)
+                    args.append(effect)
+        return anim.TransitionAnimation(*args, **properties)
