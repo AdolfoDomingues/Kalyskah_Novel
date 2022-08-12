@@ -609,6 +609,8 @@ label climax:
     scene HighresScreenshot00272 with Dissolve(0.6)
     "And eventually, their so earned rest came."
     scene HighresScreenshot00273 with Dissolve(0.6)
+    window hide # hides the window.
+    $ renpy.pause()
     scene HighresScreenshot00274 with Dissolve(0.6)
     "What they didn't know was…."
     scene HighresScreenshot00275 with Dissolve(0.6)
