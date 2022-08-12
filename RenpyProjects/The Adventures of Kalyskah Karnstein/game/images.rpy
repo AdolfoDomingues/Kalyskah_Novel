@@ -1,7 +1,7 @@
 image black = "gui/black.png"
 
 image logo_1 = "gui/logo_1.png"
-image logo_2 = "gui/logo_2.png"
+image logo_2 = "scenes/Disclaimer.jpg"
 
 
 

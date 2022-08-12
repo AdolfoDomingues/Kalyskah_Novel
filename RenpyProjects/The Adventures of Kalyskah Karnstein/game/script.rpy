@@ -1,5 +1,7 @@
 ﻿define notSettings = 1
 
+default ChoicedAtLeastOnce = 0
+
 define IsKalyNaked = 0
 
 define Kalyskah = Character("Kalyskah", color = "#ADD8E6")
@@ -12,6 +14,12 @@ label splashscreen:
     $ renpy.pause(2.0, hard = True)
     hide logo_1 with blinds
     $ renpy.pause(1.0, hard = True)
+
+    show logo_2 with blinds
+    $ renpy.pause(8.0, hard = True)
+    hide logo_2 with blinds
+    $ renpy.pause(1.0, hard = True)
+
     #jump start
     #scene warning with Dissolve(0.5)
     #$ renpy.pause(4.0, hard = True)
@@ -296,127 +304,317 @@ label Choice_2_1:
     scene HighresScreenshot00103 with Dissolve(0.6)
     Merishya "This tail is begging to get inside somewhere, so you better choose fast!"
 
-    menu:
-        "Choose pussy":  #1.a 
-            scene HighresScreenshot00103 with Dissolve(0.6)
-            Kalyskah "Err… Lets.. take it slow!"
-            scene HighresScreenshot00104 with Dissolve(0.6)
-            Merishya "Your wish is my command, lady!"
-            scene HighresScreenshot00105 with Dissolve(0.6)
-            Kalyskah "Ughn!"
-            scene HighresScreenshot00106 with Dissolve(0.6)
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00107 with Dissolve(0.6)
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00108 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}Is she increasing the pace?"
-            scene HighresScreenshot00109
-            Kalyskah "{i}{color=#DCDCDC}Oh fuck, I don’t care!"
+    jump Choice_2_1_2
+
+return
+
+
+label Choice_2_1_2:
+    if ChoicedAtLeastOnce == 1:
+        menu:
+            "Choose pussy":  #1.a 
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Kalyskah "Err… Lets.. take it slow!"
+                scene HighresScreenshot00104 with Dissolve(0.6)
+                Merishya "Your wish is my command, lady!"
+                scene HighresScreenshot00105 with Dissolve(0.6)
+                Kalyskah "Ughn!"
+                scene HighresScreenshot00106 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00107 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00108 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Is she increasing the pace?"
+                scene HighresScreenshot00109
+                Kalyskah "{i}{color=#DCDCDC}Oh fuck, I don’t care!"
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
 
 
 
-        "Choose arse": #1.b
-            scene HighresScreenshot00103 with Dissolve(0.6)
-            Kalyskah "Hm… I am feeling adventurous today! Let’s try my back door!"
-            scene HighresScreenshot00101 with Dissolve(0.6)
-            Merishya "Oh my, who would have ever thought that the lady vampire was such a dirty slut!"
+            "Choose arse": #1.b
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Kalyskah "Hm… I am feeling adventurous today! Let’s try my back door!"
+                scene HighresScreenshot00101 with Dissolve(0.6)
+                Merishya "Oh my, who would have ever thought that the lady vampire was such a dirty slut!"
 
-            menu:
-                "Don’t talk dirty to me!": #1.b.1 
-                    scene HighresScreenshot00100 with Dissolve(0.6)
-                    Kalyskah "Tune down your attitude, or I will make you do so!"
-                    scene HighresScreenshot00103 with Dissolve(0.6)
-                    Merishya "Oh, I’m sorry. I got a bit carried away."
-                    scene HighresScreenshot00108 with Dissolve(0.6)
-                    Merishya "Lift up your legs, sweetie."
-                    scene HighresScreenshot00109 with Dissolve(0.6)
-                    Kalyskah "It’s so hot!"
-                    scene HighresScreenshot00110 with Dissolve(0.6)
-                    Merishya "Don’t worry, I’m taking it slow."
-                    Kalyskah "Come here, let me taste your tongue."
-                    scene HighresScreenshot00111 with Dissolve(0.6)
-                    window hide # hides the window.
-                    $ renpy.pause()
+                menu:
+                    "Don’t talk dirty to me!": #1.b.1 
+                        scene HighresScreenshot00100 with Dissolve(0.6)
+                        Kalyskah "Tune down your attitude, or I will make you do so!"
+                        scene HighresScreenshot00103 with Dissolve(0.6)
+                        Merishya "Oh, I’m sorry. I got a bit carried away."
+                        scene HighresScreenshot00108 with Dissolve(0.6)
+                        Merishya "Lift up your legs, sweetie."
+                        scene HighresScreenshot00109 with Dissolve(0.6)
+                        Kalyskah "It’s so hot!"
+                        scene HighresScreenshot00110 with Dissolve(0.6)
+                        Merishya "Don’t worry, I’m taking it slow."
+                        Kalyskah "Come here, let me taste your tongue."
+                        scene HighresScreenshot00111 with Dissolve(0.6)
+                        window hide # hides the window.
+                        $ renpy.pause()
 
-                "Yes! I am!": #1.b.2 
+                    "Yes! I am!": #1.b.2 
 
-                    scene HighresScreenshot00100 with Dissolve(0.6)
-                    Kalyskah "Yes, yes! I am, now stop talking and fuck my arse!"
-                    scene HighresScreenshot00103 with Dissolve(0.6)
-                    Merishya "Your wish is my command, vampire slut!"
-                    scene HighresScreenshot00112 with Dissolve(0.6)
-                    Kalyskah "FUCK! You put it all at once!"
-                    scene HighresScreenshot00101 with Dissolve(0.6)
-                    Merishya "Shut up. I know you like it!"
-                    scene HighresScreenshot00110 with Dissolve(0.6)
-                    Kalyskah "Nhum… Guilty…."
-                    scene HighresScreenshot00111 with Dissolve(0.6)
-                    scene HighresScreenshot00109 with Dissolve(0.6)
-                    Merishya "Moan for me, slut!"
-                    scene HighresScreenshot00113 with Dissolve(0.6)
-                    Kalyskah "*moans*"
+                        scene HighresScreenshot00100 with Dissolve(0.6)
+                        Kalyskah "Yes, yes! I am, now stop talking and fuck my arse!"
+                        scene HighresScreenshot00103 with Dissolve(0.6)
+                        Merishya "Your wish is my command, vampire slut!"
+                        scene HighresScreenshot00112 with Dissolve(0.6)
+                        Kalyskah "FUCK! You put it all at once!"
+                        scene HighresScreenshot00101 with Dissolve(0.6)
+                        Merishya "Shut up. I know you like it!"
+                        scene HighresScreenshot00110 with Dissolve(0.6)
+                        Kalyskah "Nhum… Guilty…."
+                        scene HighresScreenshot00111 with Dissolve(0.6)
+                        scene HighresScreenshot00109 with Dissolve(0.6)
+                        Merishya "Moan for me, slut!"
+                        scene HighresScreenshot00113 with Dissolve(0.6)
+                        Kalyskah "*moans*"
+
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+            "Let her choose": #1.c 
+                scene HighresScreenshot00100 with Dissolve(0.6)
+                Kalyskah "Hm… Why don’t you surprise me?!"
+                scene HighresScreenshot00101 with Dissolve(0.6)
+                Merishya "No preference, hm? So powerful yet so submissive."
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "Alright.."
+                scene HighresScreenshot00163 with Dissolve(0.6)
+                Merishya "Stay quiet and enjoy!"
+                scene HighresScreenshot00164 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Damn, when did she became so– *Urgh*"
+                scene HighresScreenshot00167 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Her tail is in my…!"
+                scene HighresScreenshot00165 with Dissolve(0.6)
+                Merishya "What’s the problem, vampire, did you feel the sting?"
+                scene HighresScreenshot00169 with Dissolve(0.6)
+                "Merishya pushes her tail even deeper"
+                scene HighresScreenshot00166 with Dissolve(0.6)
+                Merishya "Awnser me, slut!"
+                scene HighresScreenshot00168 with Dissolve(0.6)
+                "*Pinches*"
+                scene HighresScreenshot00165 with Dissolve(0.6)
+                Merishya "I know you love it in the arse!"
+                scene HighresScreenshot00164 with Dissolve(0.6)
+                Kalyskah "*Moans* Y-yesh!"
+                scene HighresScreenshot00168 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00170 with Dissolve(0.6)
+                "Kalyskah tried not to say anything else, how could she, with her mouth so busy?"
+                "The vampire just layed down, relaxing her body and enjoyed the way the succubus was handling her."
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+
+            "Just kiss me": #1.d 
+                scene HighresScreenshot00100 with Dissolve(0.6)
+                Kalyskah "Stop with the games, I am not in the mood for this right now. Just… kiss me"
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "I know a place that I could kiss."
+                scene HighresScreenshot00173 with Dissolve(0.6)
+                Kalyskah "Hey! What are you doing with your tail!?"
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "Just relax, Kalyskah, I need your legs wide open for this."
+                scene HighresScreenshot00171 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}By the storms, her tongue is just so…"
+                scene HighresScreenshot00172 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}So.."
+                scene HighresScreenshot00174 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00175 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Fucking perfect!"
+                scene HighresScreenshot00176 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00177 with Dissolve(0.6)
+
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+            
+            
+            "Climax": #1.d 
+                jump climax
+    
+
+    else:
+        menu:
+            "Choose pussy":  #1.a 
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Kalyskah "Err… Lets.. take it slow!"
+                scene HighresScreenshot00104 with Dissolve(0.6)
+                Merishya "Your wish is my command, lady!"
+                scene HighresScreenshot00105 with Dissolve(0.6)
+                Kalyskah "Ughn!"
+                scene HighresScreenshot00106 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00107 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00108 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Is she increasing the pace?"
+                scene HighresScreenshot00109
+                Kalyskah "{i}{color=#DCDCDC}Oh fuck, I don’t care!"
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+
+
+            "Choose arse": #1.b
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Kalyskah "Hm… I am feeling adventurous today! Let’s try my back door!"
+                scene HighresScreenshot00101 with Dissolve(0.6)
+                Merishya "Oh my, who would have ever thought that the lady vampire was such a dirty slut!"
+
+                menu:
+                    "Don’t talk dirty to me!": #1.b.1 
+                        scene HighresScreenshot00100 with Dissolve(0.6)
+                        Kalyskah "Tune down your attitude, or I will make you do so!"
+                        scene HighresScreenshot00103 with Dissolve(0.6)
+                        Merishya "Oh, I’m sorry. I got a bit carried away."
+                        scene HighresScreenshot00108 with Dissolve(0.6)
+                        Merishya "Lift up your legs, sweetie."
+                        scene HighresScreenshot00109 with Dissolve(0.6)
+                        Kalyskah "It’s so hot!"
+                        scene HighresScreenshot00110 with Dissolve(0.6)
+                        Merishya "Don’t worry, I’m taking it slow."
+                        Kalyskah "Come here, let me taste your tongue."
+                        scene HighresScreenshot00111 with Dissolve(0.6)
+                        window hide # hides the window.
+                        $ renpy.pause()
+
+                    "Yes! I am!": #1.b.2 
+
+                        scene HighresScreenshot00100 with Dissolve(0.6)
+                        Kalyskah "Yes, yes! I am, now stop talking and fuck my arse!"
+                        scene HighresScreenshot00103 with Dissolve(0.6)
+                        Merishya "Your wish is my command, vampire slut!"
+                        scene HighresScreenshot00112 with Dissolve(0.6)
+                        Kalyskah "FUCK! You put it all at once!"
+                        scene HighresScreenshot00101 with Dissolve(0.6)
+                        Merishya "Shut up. I know you like it!"
+                        scene HighresScreenshot00110 with Dissolve(0.6)
+                        Kalyskah "Nhum… Guilty…."
+                        scene HighresScreenshot00111 with Dissolve(0.6)
+                        scene HighresScreenshot00109 with Dissolve(0.6)
+                        Merishya "Moan for me, slut!"
+                        scene HighresScreenshot00113 with Dissolve(0.6)
+                        Kalyskah "*moans*"
+
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+            "Let her choose": #1.c 
+                scene HighresScreenshot00100 with Dissolve(0.6)
+                Kalyskah "Hm… Why don’t you surprise me?!"
+                scene HighresScreenshot00101 with Dissolve(0.6)
+                Merishya "No preference, hm? So powerful yet so submissive."
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "Alright.."
+                scene HighresScreenshot00163 with Dissolve(0.6)
+                Merishya "Stay quiet and enjoy!"
+                scene HighresScreenshot00164 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Damn, when did she became so– *Urgh*"
+                scene HighresScreenshot00167 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Her tail is in my…!"
+                scene HighresScreenshot00165 with Dissolve(0.6)
+                Merishya "What’s the problem, vampire, did you feel the sting?"
+                scene HighresScreenshot00169 with Dissolve(0.6)
+                "Merishya pushes her tail even deeper"
+                scene HighresScreenshot00166 with Dissolve(0.6)
+                Merishya "Awnser me, slut!"
+                scene HighresScreenshot00168 with Dissolve(0.6)
+                "*Pinches*"
+                scene HighresScreenshot00165 with Dissolve(0.6)
+                Merishya "I know you love it in the arse!"
+                scene HighresScreenshot00164 with Dissolve(0.6)
+                Kalyskah "*Moans* Y-yesh!"
+                scene HighresScreenshot00168 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00170 with Dissolve(0.6)
+                "Kalyskah tried not to say anything else, how could she, with her mouth so busy?"
+                "The vampire just layed down, relaxing her body and enjoyed the way the succubus was handling her."
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+
+
+            "Just kiss me": #1.d 
+                scene HighresScreenshot00100 with Dissolve(0.6)
+                Kalyskah "Stop with the games, I am not in the mood for this right now. Just… kiss me"
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "I know a place that I could kiss."
+                scene HighresScreenshot00173 with Dissolve(0.6)
+                Kalyskah "Hey! What are you doing with your tail!?"
+                scene HighresScreenshot00103 with Dissolve(0.6)
+                Merishya "Just relax, Kalyskah, I need your legs wide open for this."
+                scene HighresScreenshot00171 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}By the storms, her tongue is just so…"
+                scene HighresScreenshot00172 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}So.."
+                scene HighresScreenshot00174 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00175 with Dissolve(0.6)
+                Kalyskah "{i}{color=#DCDCDC}Fucking perfect!"
+                scene HighresScreenshot00176 with Dissolve(0.6)
+                window hide # hides the window.
+                $ renpy.pause()
+                scene HighresScreenshot00177 with Dissolve(0.6)
+
+                $ ChoicedAtLeastOnce = 1
+                jump Choice_2_1_2
+return
 
 
 
 
-        "Let her choose": #1.c 
-            scene HighresScreenshot00100 with Dissolve(0.6)
-            Kalyskah "Hm… Why don’t you surprise me?!"
-            scene HighresScreenshot00101 with Dissolve(0.6)
-            Merishya "No preference, hm? So powerful yet so submissive."
-            scene HighresScreenshot00103 with Dissolve(0.6)
-            Merishya "Alright.."
-            scene HighresScreenshot00163 with Dissolve(0.6)
-            Merishya "Stay quiet and enjoy!"
-            scene HighresScreenshot00164 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}Damn, when did she became so– *Urgh*"
-            scene HighresScreenshot00167 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}Her tail is in my…!"
-            scene HighresScreenshot00165 with Dissolve(0.6)
-            Merishya "What’s the problem, vampire, did you feel the sting?"
-            scene HighresScreenshot00169 with Dissolve(0.6)
-            "Merishya pushes her tail even deeper"
-            scene HighresScreenshot00166 with Dissolve(0.6)
-            Merishya "Awnser me, slut!"
-            scene HighresScreenshot00168 with Dissolve(0.6)
-            "*Pinches*"
-            scene HighresScreenshot00165 with Dissolve(0.6)
-            Merishya "I know you love it in the arse!"
-            scene HighresScreenshot00164 with Dissolve(0.6)
-            Kalyskah "*Moans* Y-yesh!"
-            scene HighresScreenshot00168 with Dissolve(0.6)
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00170 with Dissolve(0.6)
-            "Kalyskah tried not to say anything else, how could she, with her mouth so busy?"
-            "The vampire just layed down, relaxing her body and enjoyed the way the succubus was handling her."
-
-
-
-        "Just kiss me": #1.d 
-            scene HighresScreenshot00100 with Dissolve(0.6)
-            Kalyskah "Stop with the games, I am not in the mood for this right now. Just… kiss me"
-            scene HighresScreenshot00103 with Dissolve(0.6)
-            Merishya "I know a place that I could kiss."
-            scene HighresScreenshot00173 with Dissolve(0.6)
-            Kalyskah "Hey! What are you doing with your tail!?"
-            scene HighresScreenshot00103 with Dissolve(0.6)
-            Merishya "Just relax, Kalyskah, I need your legs wide open for this."
-            scene HighresScreenshot00171 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}By the storms, her tongue is just so…"
-            scene HighresScreenshot00172 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}So.."
-            scene HighresScreenshot00174 with Dissolve(0.6)
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00175 with Dissolve(0.6)
-            Kalyskah "{i}{color=#DCDCDC}Fucking perfect!"
-            scene HighresScreenshot00176 with Dissolve(0.6)
-            window hide # hides the window.
-            $ renpy.pause()
-            scene HighresScreenshot00177 with Dissolve(0.6)
+label climax:
+    "Time goes by…"
+    scene HighresScreenshot00262 with Dissolve(0.6)
+    "Merishya undresses and decides to join the pleasure she was giving to the vampire."
+    "Kalyskah gladly opens her legs and grinds her clit againt Merishya's"
+    scene HighresScreenshot00263 with Dissolve(0.6)
+    Kalyskah "Your body is so fucking warm, demoness!"
+    scene HighresScreenshot00264 with Dissolve(0.6)
+    Merishya "And yours is as cold as the grave, undead!"
+    scene HighresScreenshot00263 with Dissolve(0.6)
+    Kalyskah "Alright, you ruined it, shut up and.. Nhg… let's.."
+    scene HighresScreenshot00266
+    Kalyskah "Oh fuck.. I-I can't hold it any longer!"
+    Merishya "Then don't!"
+    scene HighresScreenshot00265 with Dissolve(0.6)
+    "The succubus slows down her pace, bringing her soft heart-shaped tail to stimulate them both"
+    scene HighresScreenshot00267 with Dissolve(0.6)
+    "It doesn't take long for the demoness' climax to build up as well."
+    scene HighresScreenshot00268 with Dissolve(0.6)
+    "And soon, vampire and succubus were together in bliss."
+    scene HighresScreenshot00269 with Dissolve(0.6)
+    "As they came back to their senses, they started kissing each other."
+    scene HighresScreenshot00270 with Dissolve(0.6)
+    "Hands were everywhere"
+    scene HighresScreenshot00271 with Dissolve(0.6)
+    "The demoness took advantage of Kalyskah's lust and pushed even closer."
+    scene HighresScreenshot00269 with Dissolve(0.6)
+    "They stayed like this for a while longer. Losing track of time"
+    scene HighresScreenshot00272 with Dissolve(0.6)
+    "And eventually, their so earned rest came."
+    scene HighresScreenshot00273 with Dissolve(0.6)
+    scene HighresScreenshot00274 with Dissolve(0.6)
+    "What they didn't know was…."
+    scene HighresScreenshot00275 with Dissolve(0.6)
+    "...they were not alone."
+    scene HighresScreenshot00276 with Dissolve(0.6)
+    "Something has been watching them, and now it wanted to play."
 
 
     scene black with Dissolve(0.6)
@@ -425,11 +623,7 @@ label Choice_2_1:
     play music "audio/forest_exploration.mp3" loop fadeout 1.0
     jump Choice_2
 
-
-
 return
-
-
 
 
 
