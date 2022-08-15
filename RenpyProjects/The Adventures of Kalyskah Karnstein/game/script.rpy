@@ -281,7 +281,7 @@ label Choice_2_1:
     scene HighresScreenshot00093 with Dissolve(0.6)
     Merishya "These clothes…"
     scene HighresScreenshot00094 with Dissolve(0.6)
-    Kalyskah "They’ve got to go!"
+    Merishya "They’ve got to go!"
     #Some sound-effect of clothes being ripped and the camera shaking
 
     scene HighresScreenshot00095 with Dissolve(0.6)
